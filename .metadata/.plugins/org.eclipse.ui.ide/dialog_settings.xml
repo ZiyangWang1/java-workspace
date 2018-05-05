@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\Darren Wang\eclipse-workspace\test1"/>
+		<item value="C:\Users\Darren Wang\eclipse-workspace\20170413"/>
+		<item value="C:\Program Files\Java"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
+</section>

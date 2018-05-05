@@ -1,0 +1,29 @@
+package stack;
+
+public final class LinkedStack<T> implements Stack<T> {
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void push(T x) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public T peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public T pop() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
