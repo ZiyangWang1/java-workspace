@@ -139,7 +139,6 @@ public class BinaryTree<T>
 									ChildStack.clear();
 									bMatched=false;
 									pPattern = pattern.root;
-									PatternStack.clear();
 									break;
 								}
 							}
@@ -149,7 +148,6 @@ public class BinaryTree<T>
 								ChildStack.clear();
 								bMatched=false;
 								pPattern = pattern.root;
-								PatternStack.clear();
 								break;
 							}
 						}
@@ -168,7 +166,6 @@ public class BinaryTree<T>
 								ChildStack.clear();
 								bMatched=false;
 								pPattern = pattern.root;
-								PatternStack.clear();
 								break;
 							}
 						}
@@ -180,8 +177,6 @@ public class BinaryTree<T>
 						this.remove(pMain.parent, false);
 					pPattern = pattern.root;
 				}
-				MainStack.push(pMain);
-				pMain=pMain.left;
 			}
 			else
 			{
