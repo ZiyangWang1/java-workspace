@@ -113,13 +113,11 @@ public class BinaryTree<T>
 		BinaryNode<T> pMain = this.root;
 		BinaryNode<T> pChild = pMain;
 		BinaryNode<T> pPattern = pattern.root;
-		boolean bMatched = true;
 		
 		while(pMain!=null||!MainStack.isEmpty())
 			if(pMain!=null)
 			{
 				pChild = pMain;
-				bMatched = true;
 				while(pChild!=null||!ChildStack.isEmpty())
 					while(pPattern!=null||!PatternStack.isEmpty())
 						if(pChild!=null)
@@ -136,20 +134,12 @@ public class BinaryTree<T>
 								else
 								{
 									pChild=null;
-									ChildStack.clear();
-									bMatched=false;
-									pPattern = pattern.root;
+									ChildStack.
 									break;
 								}
 							}
 							else
-							{
-								pChild=null;
-								ChildStack.clear();
-								bMatched=false;
-								pPattern = pattern.root;
 								break;
-							}
 						}
 						else
 						{
@@ -161,29 +151,9 @@ public class BinaryTree<T>
 								pPattern=pPattern.right;
 							}
 							else
-							{
-								pChild=null;
-								ChildStack.clear();
-								bMatched=false;
-								pPattern = pattern.root;
 								break;
-							}
 						}
-				if(bMatched)
-				{
-					if(pMain.parent.left==pMain)
-						this.remove(pMain.parent, true);
-					else
-						this.remove(pMain.parent, false);
-					pPattern = pattern.root;
-				}
 			}
-			else
-			{
-				pMain = MainStack.pop();
-				pMain = pMain.right;
-			}
-		return;
 		
 	}
 	

@@ -30,5 +30,10 @@ public final class LinkedStack<T> implements Stack<T>
 	{
 		return this.list.remove(0);
 	}
+	
+	public void clear()
+	{
+		this.list.clear();
+	}
 
 }
